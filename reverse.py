@@ -9,7 +9,6 @@ def reverse(s):
 
 s = "Lokesh"
 
-print ("The original string is : ",end="")
 print (s)
 
 print ("The reversed string(using loops) is : ",end="")
