@@ -2,12 +2,12 @@
 # using loop
 
 def reverse(s):
-str = ""
-for i in s:
+  str = ""
+  for i in s:
 	str = i + str
-return str
+  return str
 
-s = "Geeksforgeeks"
+s = "Lokesh"
 
 print ("The original string is : ",end="")
 print (s)
