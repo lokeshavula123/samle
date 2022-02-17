@@ -7,7 +7,7 @@ def reverse(s):
 	str = i + str
   return str
 
-s = "Lokesh"
+s = "Lokeshavula"
 
 print (s)
 
