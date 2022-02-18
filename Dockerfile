@@ -11,8 +11,8 @@ RUN tar -xvzf apache*.tar.gz
 RUN mv apache-tomcat-10.0.16/* /opt/tomcat/.
 
 
-WORKDIR /opt/tomcat/webapps
 COPY /var/lib/jenkins/workspace/java_tomcat/target/SimpleTomcatWebApp.war  /opt/tomcat/webapps
+WORKDIR /opt/tomcat/webapps
 
 EXPOSE 8080
 
