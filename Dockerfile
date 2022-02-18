@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-RUN apt-get -y update
 RUN mkdir /usr/local/tomcat
 RUN wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
