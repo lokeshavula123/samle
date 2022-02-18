@@ -12,3 +12,8 @@ RUN mv apache-tomcat-10.0.16/* /opt/tomcat/.
 
 
 WORKDIR /opt/tomcat/webapps
+RUN cp /var/lib/jenkins/workspace/java_tomcat/target/SimpleTomcatWebApp.war
+
+EXPOSE 8080
+
+
