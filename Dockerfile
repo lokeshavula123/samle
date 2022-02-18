@@ -10,7 +10,7 @@ RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat
 RUN tar -xvzf apache*.tar.gz
 RUN mv apache-tomcat-10.0.16/* /opt/tomcat/.
 
-
+FROM var/lib/jenkins/workspace/java_tomcat/target  as var
 COPY var/lib/jenkins/workspace/java_tomcat/target/*  /opt/tomcat/webapps
 WORKDIR /opt/tomcat/webapps
 
